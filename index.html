@@ -21,12 +21,10 @@
         body { font-family: 'Poppins', sans-serif; color: var(--dark-text); overflow-x: hidden; }
         h1, h2, h3, .navbar-brand { font-family: 'Playfair Display', serif; }
 
-        /* Navbar Custom */
         .navbar { background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.1); padding: 15px 0; }
         .btn-brand { background: var(--primary-color); color: white; border-radius: 25px; padding: 10px 25px; transition: 0.3s; border: none; text-decoration: none; display: inline-block; }
         .btn-brand:hover { background: var(--secondary-color); color: white; transform: translateY(-2px); }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(13, 71, 161, 0.6), rgba(0, 0, 0, 0.4)), 
                         url('https://i.postimg.cc/kg47CpJ4/imgi-33-49985483-770212830003424-6739412678191076416-n.jpg');
@@ -39,7 +37,6 @@
             padding: 60px 0;
         }
 
-        /* Responsive Hero & Typography */
         @media (max-width: 768px) {
             .hero { text-align: center; height: auto; padding: 100px 0 60px 0; }
             .hero h1 { font-size: 2.2rem !important; }
@@ -49,13 +46,11 @@
             .section { padding: 50px 0; }
         }
 
-        /* Sections */
         .section { padding: 80px 0; }
         .section-bg { background-color: var(--light-bg); }
         .section-title h2 { font-weight: 700; color: var(--primary-color); margin-bottom: 20px; position: relative; padding-bottom: 15px; }
         .section-title h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: var(--secondary-color); }
 
-        /* Cards */
         .testimonial-card, .form-card, .feature-card {
             background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             transition: 0.3s; border: 1px solid #eee;
@@ -63,16 +58,11 @@
         .testimonial-card:hover { transform: translateY(-10px); border-color: var(--primary-color); }
         .form-control, .form-select { border-radius: 10px; padding: 12px; border: 1px solid #ddd; }
 
-        /* Map Fix */
         .map-embed { border-radius: 15px; overflow: hidden; width: 100%; }
         .map-embed iframe { width: 100% !important; height: 350px; }
 
         footer { background: #1a252f; color: white; padding: 40px 0; }
     </style>
-
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
 
@@ -140,35 +130,6 @@
       </div>
     </section>
 
-    <section class="section section-bg" id="testimonials">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Témoignages</h2>
-          <p>Ce que disent nos patients</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="p-4 testimonial-card h-100 text-center">
-              <p class="text-muted italic">"Cabinet Almadar bzzaf zwin khdemt m3ahom w l’équipe kat3amel b ihtiram w rahat"</p>
-              <strong class="d-block mt-3 text-primary">— Amina El Amrani</strong>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-4 testimonial-card h-100 text-center" dir="rtl">
-              <p class="text-muted">"عيادة حديثة ونظيفة والمعدات متطورة شعرت بالاطمئنان منذ أول زيارة "</p>
-              <strong class="d-block mt-3 text-primary" dir="ltr">— Salma Rachidi</strong>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-4 testimonial-card h-100 text-center" dir="rtl">
-              <p class="text-muted">"استقبال جيد وخدمة مهنية لم أشعر بأي ألم أثناء العلاج وأنصح به بشدة"</p>
-              <strong class="d-block mt-3 text-primary" dir="ltr">— يوسف بنعلي</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="appointment">
       <div class="container">
         <div class="section-title text-center">
@@ -207,7 +168,36 @@
       </div>
     </section>
 
-    <section class="section section-bg" id="contact">
+    <section class="section section-bg" id="testimonials">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Témoignages</h2>
+          <p>Ce que disent nos patients</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 testimonial-card h-100 text-center">
+              <p class="text-muted italic">"Cabinet Almadar bzzaf zwin khdemt m3ahom w l’équipe kat3amel b ihtiram w rahat"</p>
+              <strong class="d-block mt-3 text-primary">— Amina El Amrani</strong>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 testimonial-card h-100 text-center" dir="rtl">
+              <p class="text-muted">"عيادة حديثة ونظيفة والمعدات متطورة شعرت بالاطمئنان منذ أول زيارة "</p>
+              <strong class="d-block mt-3 text-primary" dir="ltr">— Salma Rachidi</strong>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 testimonial-card h-100 text-center" dir="rtl">
+              <p class="text-muted">"استقبال جيد وخدمة مهنية لم أشعر بأي ألم أثناء العلاج وأنصح به بشدة"</p>
+              <strong class="d-block mt-3 text-primary" dir="ltr">— يوسف بنعلي</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
       <div class="container">
         <div class="section-title text-center">
           <h2>Contactez-nous</h2>
@@ -217,7 +207,7 @@
             <div class="p-4 feature-card h-100">
               <h5 class="fw-bold mb-3">Notre emplacement</h5>
               <div class="map-embed mb-3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d830.6628327840199!2d-7.5031584253395!3d33.614350084107144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cb2c9f992eeb%3A0xfed8b72cf5824b55!2sCabinet%20dentaire%20Almadar%20dr%20GASSABI%20Khaoula!5e0!3m2!1sen!2sma!4v1769029462930!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="http://googleusercontent.com/maps.google.com/3..." allowfullscreen="" loading="lazy"></iframe>
               </div>
               <p><i class="bi bi-geo-alt-fill text-primary me-2"></i> Numéro 1, Bloc 4 Boulevard Ghadaoui Abass, Casablanca</p>
               <p><i class="bi bi-telephone-fill text-primary me-2"></i> 05 22 73 43 41</p>
@@ -247,7 +237,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Formulaire RDV (Cabinet)
         function sendWhatsApp() {
             const nom = document.querySelector('[name="nom"]').value;
             const prenom = document.querySelector('[name="prenom"]').value;
@@ -256,25 +245,24 @@
             const service = document.querySelector('[name="service"]').value;
             const notes = document.querySelector('[name="message"]').value;
             
-            const whatsappNumber = "212643587891"; 
-            const text = `🗓️ Nouvelle réservation\nNom: ${nom}\nPrénom: ${prenom}\nTéléphone: ${phone}\nDate: ${date}\nService: ${service}\nNotes: ${notes || "Aucune"}`;
+            const whatsappNumber = "212522767026"; 
+
+            // Hna sta3malt \n bach tji s-toura m-fara9a f WhatsApp
+            const text = `🗓️ Nouvelle réservation\n\nNom: ${nom}\nPrénom: ${prenom}\nTéléphone: ${phone}\nDate: ${date}\nService: ${service}\nNotes: ${notes || "Aucune"}`;
             
-            window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
+            const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+            window.open(url, "_blank");
         }
 
-        // Formulaire Contact (Client)
         function sendContactToWhatsApp() {
             const nom = document.getElementById('contactNom').value;
             const email = document.getElementById('contactEmail').value;
             const message = document.getElementById('contactMsg').value;
-            
             if(!nom || !email || !message) { alert("Veuillez remplir tous les champs."); return; }
-            
             const text = `Bonjour, je suis ${nom} (${email}). voici mon message : ${message}`;
             window.open(`https://wa.me/212643587891?text=${encodeURIComponent(text)}`, '_blank');
         }
 
-        // Smooth Scroll
         $('a[href^="#"]').on('click', function(event) {
             var target = $(this.getAttribute('href'));
             if( target.length ) {
